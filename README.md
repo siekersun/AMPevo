@@ -25,14 +25,3 @@ python generate.py scaffolding --checkpoint models/ampevo.pth --length 20 --moti
 ```
 
 For inpainting or scaffolding, you can use `--template` instead. Use amino-acid letters for fixed positions and `X` for positions to generate, for example `XXXXKLAKLAXXXXX`. Results are saved as `generated_<mode>.csv` by default; use `--output path/to/results.csv` to choose another file. Use `--temperature` or `--top-k` to adjust sampling.
-
-## Train your own model
-
-The `data/` directory contains the peptide and AMP train, validation, and test splits. To train from the supplied data:
-
-```bash
-python finetune_esm.py --device cuda:0
-python train.py --device cuda:0
-```
-
-The first command saves `models/esm_finetuned.pth`; the second uses those weights and saves `models/ampevo.pth`.
