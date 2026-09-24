@@ -8,7 +8,7 @@ Example:
         --val-csv data/esm_validation.csv \
         --test-csv data/esm_test.csv \
         --sequence-column Sequence \
-        --output models/esm_finetuned.pth \
+        --output checkpoints/esm_finetuned.pth \
         --device cuda:0 --batch-size 2 --epochs 10
 """
 
@@ -103,7 +103,7 @@ def parse_args():
     parser.add_argument("--val-csv", default="data/esm_validation.csv")
     parser.add_argument("--test-csv", default="data/esm_test.csv")
     parser.add_argument("--sequence-column", default="Sequence")
-    parser.add_argument("--output", default="models/esm_finetuned.pth")
+    parser.add_argument("--output", default="checkpoints/esm_finetuned.pth")
     parser.add_argument("--batch-size", type=int, default=1)
     parser.add_argument("--epochs", type=int, default=10)
     parser.add_argument("--learning-rate", type=float, default=1e-5)

@@ -86,12 +86,12 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description="Train ByteNet/OADM with frozen short-peptide-adapted ESM"
     )
-    parser.add_argument("--esm-weights", default="models/esm_finetuned.pth")
+    parser.add_argument("--esm-weights", default="checkpoints/esm_finetuned.pth")
     parser.add_argument("--train-csv", default="data/amp_train.csv")
     parser.add_argument("--val-csv", default="data/amp_validation.csv")
     parser.add_argument("--test-csv", default="data/amp_test.csv")
     parser.add_argument("--sequence-column", default="sequence")
-    parser.add_argument("--output", default="models/ampevo.pth")
+    parser.add_argument("--output", default="checkpoints/ampevo.pth")
     parser.add_argument("--device", default="cuda:0" if torch.cuda.is_available() else "cpu")
     parser.add_argument("--batch-size", type=int, default=64)
     parser.add_argument("--validation-batch-size", type=int, default=128)
