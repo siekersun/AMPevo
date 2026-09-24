@@ -1,5 +1,5 @@
 """AMPevo model package."""
 
-from .model import ByteNetLMTime
+from .network import ByteNetLMTime
 
 __all__ = ["ByteNetLMTime"]

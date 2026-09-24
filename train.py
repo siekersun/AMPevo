@@ -16,9 +16,9 @@ from torch.optim.lr_scheduler import LambdaLR
 from torch.utils.data import DataLoader, Dataset
 from tqdm.auto import tqdm
 
-from esmdiff.losses import OAMaskedCrossEntropyLoss
-from esmdiff.model import ByteNetLMTime
-from esmdiff.pretrain import ESM2
+from model.losses import OAMaskedCrossEntropyLoss
+from model.network import ByteNetLMTime
+from model.pretrain import ESM2
 from sequence_models.utils import warmup
 
 

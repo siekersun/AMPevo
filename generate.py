@@ -8,8 +8,8 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from esmdiff.model import ByteNetLMTime
-from esmdiff.pretrain import esm2_t33_650M_UR50D
+from model.network import ByteNetLMTime
+from model.pretrain import esm2_t33_650M_UR50D
 
 
 AMINO_ACIDS = "ACDEFGHIKLMNPQRSTVWY"

@@ -26,7 +26,7 @@ from torch.optim import AdamW
 from torch.utils.data import DataLoader, Dataset
 from tqdm.auto import tqdm
 
-from esmdiff.pretrain import esm2_t33_650M_UR50D
+from model.pretrain import esm2_t33_650M_UR50D
 
 
 class SequenceDataset(Dataset):
