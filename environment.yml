@@ -1,0 +1,14 @@
+name: AMPevo
+
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - torch==2.3.1
+      - torchvision==0.18.1
+      - torchaudio==2.3.1
+      - sequence-models==1.8.0
+      - fair-esm==2.0.0
+      - numpy<2
+      - pandas
+      - tqdm
